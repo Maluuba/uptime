@@ -16,6 +16,8 @@ var PollerCollection = require('./lib/pollers/pollerCollection');
 var apiApp     = require('./app/api/app');
 var dashboardApp = require('./app/dashboard/app');
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 // database
 
 var mongoose   = require('./bootstrap');
