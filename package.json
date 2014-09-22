@@ -19,7 +19,8 @@
     "net-ping":  "1.1.7",
     "js-yaml": "2.1.0",
     "webpagetest": "0.2.0",
-    "request": "2.34.0"
+    "request": "2.34.0",
+    "zombie": "2.0.0-alpha31"
   },
   "devDependencies": {
     "mocha": "1.7.x",
