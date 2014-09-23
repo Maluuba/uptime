@@ -20,7 +20,7 @@
     "js-yaml": "2.1.0",
     "webpagetest": "0.2.0",
     "request": "2.34.0",
-    "zombie": "2.0.0-alpha31",
+    "zombie": "1.4.1",
     "xml2js": "0.4.4"
   },
   "devDependencies": {
