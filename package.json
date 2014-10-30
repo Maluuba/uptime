@@ -20,6 +20,7 @@
     "js-yaml": "2.1.0",
     "webpagetest": "0.2.0",
     "request": "2.34.0"
+    "pagerduty": "0.0.3"
   },
   "devDependencies": {
     "mocha": "1.7.x",
