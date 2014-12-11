@@ -5,6 +5,7 @@ while true; do
         if [ -z "$returnVal" ] || [ ${returnVal} -ne 200 ]; then
             pidVal=$(ps aux | grep "nodejs"  | grep -v "grep" |  tr -s ' ' | cut -d ' ' -f 2)
             kill -9 ${pidVal}
+            echo "Uptime was restarted" | mail -s 'Uptime was restarted' 'pager.duty@maluuba.com'
             nodejs app  &
         else
             echo "Uptime is fine"
