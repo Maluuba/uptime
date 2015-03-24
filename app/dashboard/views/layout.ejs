@@ -28,9 +28,11 @@
       <div class="navbar navbar-inverse">
         <div class="navbar-inner">
           <div class="container">
-            <a class="brand" href="<%= route %>/events">Uptime</a>
+            <a class="brand" href="<%= route %>/checks">Uptime</a>
             <ul class="nav pull-left">
+              <!--
               <li><a href="<%= route %>/events">Events</a></li>
+              -->
               <li><a href="<%= route %>/checks">Checks</a></li>
               <li><a href="<%= route %>/tags">Tags</a></li>
               <li id="new_events"><a href="<%= route %>/events?highlightFrom=<%= Date.now() %>"></a></li> 
