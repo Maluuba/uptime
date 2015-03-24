@@ -36,15 +36,20 @@ var page = {};
 <div id="sectionList" class="row">
   <div class="span2">
     <ul id="secondaryNav" class="nav nav-tabs nav-stacked">
+    <!--
       <li><a href="#availability">Availability<i class="icon-chevron-right"></i><br/><strong class="availability"></strong>%</a></li>
       <li><a href="#events">Downtime<i class="icon-chevron-right"></i><br/><strong class="downtime"></strong></a></li>
+    -->
       <li><a href="#responseTime">Response Time<i class="icon-chevron-right"></i><br/><strong class="avgRespTime"></strong>ms</a></li>
+    <!--
       <li><a href="#responsiveness">Responsiveness<i class="icon-chevron-right"></i><br/><strong class="responsiveness"></strong>%</a></li>
       <li><a href="#checks">Checks<i class="icon-chevron-right"></i></a></li>
       <li><a href="#data">Data<i class="icon-chevron-right"></i></a></li>
+    -->
     </ul>
   </div>
   <div class="span10">
+  <!--
     <section id="availability">
     <%- partial('_availability') %>
     </section>
@@ -52,9 +57,11 @@ var page = {};
     <h2>Downtime</h2>
     <%- partial('_events', { url: '/api/tags/' + encodeURIComponent(tag.name) + '/events', route: route }) %>
     </section>
+  -->
     <section id="responseTime">
     <%- partial('_responseTime') %>
     </section>
+  <!--
     <section id="responsiveness">
     <%- partial('_responsiveness') %>
     </section>
@@ -64,6 +71,7 @@ var page = {};
     <section id="data">
     <%- partial('_data', { url: '/api/tags/' + encodeURIComponent(tag.name) + '/stats/', route: route } ) %>
     </section>
+  -->
   </div>
 </div>
 <script>
